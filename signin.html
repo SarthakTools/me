@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<style>
+    *{
+        margin: 1%;
+    }
+body {
+    background-color: black;
+    padding: 20px;
+}
+label {
+    color: red;
+    font-size: 175%;
+    font-family: cursive;
+}
+input {
+    background-color: white;
+    color: darkblue;
+    font-size: 170%;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 3px;
+}
+select {
+    font-size: 150%;
+}
+.container {
+    border-radius: 5px;
+    background-color: #333;
+    padding: 80px;
+}
+#input_color {
+    background-color: black;
+    color: blue;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+#input_color:hover {
+    background-color: black;
+    font-size: 173%;
+}
+a {
+    color: green;
+}
+a:hover {
+    color: yellow;
+}
+</style>
+</head>
+<body>
+<form method="post" action="index2.php">
+<div class="container">
+<label for="name">Name </label>
+<input type="name" name="name" id="name" maxlength = "30" minlength = "3" style = "width: 600px;text-transform: uppercase;" spellcheck="false" required = ""><br>
+<label for="email">Email </label>
+<input type="email" name="email" id="email" style = "width: 600px;font-family: none;" spellcheck="false" required = ""><br>
+<label for="password">Password </label>
+<input type="password" name="password" id="password" style = "width: 600px" required = ""><br>
+<input type = "radio" name = "terms"required = "">
+<label for = "I agree terms and policy">I agree the <a href = "#">Terms and Policy</a></label><br><br>
+<input type = "radio" name = "terms"required = "">
+<label for = "I don't agree terms and policy">I don't agree the <a href = "#">Terms and Policy</a></label><br><br>
+<input type="submit" value="Submit" id = "input_color">
+</div>
+</form>
+</body>
+</html>
+<!--INSERT INTO `form` (`username`, `email`, `password`) VALUES ('someone', 'someone@gmail.com', 'Someone');-->

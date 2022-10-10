@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+    background-color: black;
+}
+h1 {
+    color: blue;
+    text-align: center;
+    padding: 40px;
+    left: 80px;
+    top: 20px;  
+}
+h2 {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    left: 80px;
+    top: 20px;
+}
+img {
+    border-radius: 50%;
+}
+header {
+background-color: #333;
+position: fixed;
+padding: 10px;
+left: 0;
+right: 0;
+top: 5px;
+height: 30px;
+display: flex;
+align-items: center;
+box-shadow: 0 0 50px 0 black;
+}
+/*Navigation Page starts from here*/
+* {
+
+margin: 0px;
+
+padding: 10px;
+
+box-sizing: border-box;
+
+}
+
+.body-text {
+
+display: flex;
+
+font-family: "Montserrat", sans-serif;
+
+align-items: center;
+
+justify-content: center;
+
+margin-top: 250px;
+
+}
+
+nav {
+
+display: flex;
+
+justify-content: space-around;
+
+align-items: center;
+
+min-height: 8vh;
+
+background-color: #333;
+
+font-family: "Montserrat", sans-serif;
+
+}
+
+.heading {
+
+color: yellow;
+
+text-transform: uppercase;
+
+letter-spacing: 5px;
+
+font-size: 20px;
+
+}
+
+.nav-links {
+
+display: flex;
+
+justify-content: space-around;
+
+width: 20%;
+
+}
+
+.nav-links li {
+
+list-style: none;
+
+}
+
+.nav-links a {
+
+color: white;
+
+text-decoration: none;
+
+letter-spacing: 4px;
+
+font-weight: bold;
+
+font-size: 14px;
+
+padding: 14px 16px;
+
+}
+
+.nav-links a:hover:not(.active) {
+
+background-color: blue;
+
+}
+
+.nav-links li a.active {
+
+background-color: #4caf50;
+
+}
+/*Navigation Code ends here*/
+</style>
+<link rel="icon" type="image/x-icon" href="Silent.jpg">
+</head>
+<!--Our Website code starts from here.................................................-->
+
+<body>
+<!--Navigation Page -->
+<nav>
+<div class="heading">
+<h4>Sarthak Website</h4>
+</div>
+<ul class="nav-links">
+<li><a href = "#">Home</a></li>
+<li><a href="about.html">Python</a></li>
+<li><a href="contact.html">Contact</a></li> 
+<!--<a target="_self" href="https://www.eyehunts.com" >EyeHunts.com</a>-->
+<li><a target = "_self" class = "active" href = "signin.html">Login</a></li>
+</ul>
+</nav>
+<!--Navigation Page ends here-->
+<h1>Hi there! I am Sarthak Singh.</h1>
+<h2>I am a Python Programmer</h2>
+<img src = "Silent.jpg">
+</body>
+</html>
