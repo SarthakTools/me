@@ -1,12 +1,11 @@
 <?php
-$insert = false;
-if(isset($_POST['name'])) {
 
-$server = "localhost";
-$username = "root";
-$password = "";
+$hostname = "sql201.unaux.com";
+$username = "unaux_32256482";
+$spassword = "3Cq!Nf@5";
+$database = "unaux_32256482_form";
 
-$conn = mysqli_connect($server, $username, $password);
+$conn = mysqli_connect($hostname, $username, $spassword,$database);
 
 $name = $_POST['name'];
 $email = $_POST['email'];
@@ -16,20 +15,22 @@ $sql = "INSERT INTO `form`.`form` (`username`, `email`, `password`) VALUES ('$na
 
 
 
-if($conn->query($sql) == true)  {
+if($conn)  {
     $insert = true;
+    echo "<script>console.log('Database Connected !');</script>";
 }
 else {
-    echo "ERROR : $sql <br> $conn->error";
-}
-
-$conn->close();
+    echo "Error !!!";
 }
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 <style>
+* {
+    margin: 0;
+    padding: 0;
+}
     body {
     background-color: black;
 }
@@ -178,7 +179,7 @@ background-color: #4caf50;
 <li><a href = "#">Home</a></li>
 <li><a href="python.html">Python</a></li>
 <li><a href="contact1.html">Contact</a></li> 
-<li><a class = "active" href = "My_Website.html">Logout</a></li>
+<li><a class = "active" href = "index.html">Logout</a></li>
 </ul>
 </nav>
 <!--Navigation Page ends here-->
