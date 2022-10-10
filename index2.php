@@ -5,8 +5,6 @@ $username = "";
 $spassword = "";
 $database = "";
 
-$conn = mysqli_connect($hostname, $username, $spassword,$database);
-
 $name = $_POST['name'];
 $email = $_POST['email'];
 $pass = $_POST['password'];
