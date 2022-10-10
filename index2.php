@@ -1,16 +1,16 @@
 <?php
 
-$hostname = "sql201.unaux.com";
-$username = "unaux_32256482";
-$spassword = "3Cq!Nf@5";
-$database = "unaux_32256482_form";
+$hostname = "";
+$username = "";
+$spassword = "";
+$database = "";
 
 $conn = mysqli_connect($hostname, $username, $spassword,$database);
 
 $name = $_POST['name'];
 $email = $_POST['email'];
 $pass = $_POST['password'];
-
+e
 $sql = "INSERT INTO `form`.`form` (`username`, `email`, `password`) VALUES ('$name', '$email', '$pass');";
 
 
